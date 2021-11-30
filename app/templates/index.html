@@ -1,0 +1,25 @@
+<!-- this is the home page
+    of the to do list app -->
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block content %}
+
+    <div class="ace">
+    <h1><font color="#778899" size="7px" face="fantasy">Blog </font>
+    <font color="#778899" size="5px" face="fantasy">(beta)</font></h1>
+      <h3> <font color="#778899" size="6px" face="fantasy">Hello,</font>
+      {% if current_user.is_authenticated %}
+        {{current_user.name}}
+      {% else %}
+        Stranger
+      {% endif %} !
+    </h3>
+    {% if current_user.is_authenticated %}
+        <a href="{{ url_for('logout') }}"><h1><font color="#778899" size="6.4px">Log Out</font></h1></a>
+        <a href="/forum"><h1><font color="#778899" size="6.4px">Forum</font></h1></a>
+    {% else %}
+        <a href="/register"> <h2 ><font color="#778899" size="6.4px">Register!</font></h2></a>
+        <a href="{{ url_for('login') }}"><h2 ><font color="#778899" size="6.4px">Login!</font></h2></a>
+    {% endif %}
+</div>
+{% endblock %}

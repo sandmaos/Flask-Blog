@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Flasky - {{ user.name }}{% endblock %}
+{% block content %}
+    <h1><img class="img-rounded profile-thumbnail" src="{{ user.gravatar(size=128) }}">&nbsp;&nbsp;
+        <font color="#778899" size="7px" face="fantasy">{{ user.name }}</font></h1>
+    <div class="page-header">
+        <h1><font color="#778899" size="4px">Account: {{ user.email }}</font></h1>
+        <h1><font color="#778899" size="4px">Birthday: {{ user.birth }}</font></h1>
+        <h1><font color="#778899" size="4px">About me: {{ user.about }}</font></h1>
+        <h1><font color="#778899" size="4px">Location: </font>  <p><a href="http://maps.google.com/?q={{ user.location }}">
+            <font color="#778899" size="4px">{{ user.location }}</font>     </a></p>    </h1>
+    <h2><td><a href="/explore"><button type="button" class="btn btn-primary">Back</button></a></td></h2>
+    </div>
+{% endblock %}

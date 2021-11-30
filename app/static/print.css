@@ -1,0 +1,38 @@
+@media print {
+
+  .navbar{
+       display: none;
+   }
+
+   .btn{
+        display: none;
+    }
+
+    a{
+         display: none;
+     }
+}
+
+.Base{
+  background-color: PaleGoldenrod
+}
+
+.Index{
+  background-color: PaleGoldenrod
+}
+
+.Alltask{
+  background-color: DarkSeaGreen
+}
+
+.Createtask{
+  background-color: DarkSeaGreen
+}
+
+.Finishedtask{
+  background-color: Gainsboro
+}
+
+.Unfinishedtask{
+  background-color: Gainsboro
+}

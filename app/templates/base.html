@@ -1,0 +1,85 @@
+<html>
+  <head>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.bding.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/static/print.css">
+    {% if title %}
+    <title>blog - {{ title }}</title>
+    {% else %}
+    <title>Blog </title>
+    {% endif %}
+
+    <!--the new added styling properties which
+     be inherited by other pages
+     -->
+    <style>
+      body{
+          background-image: url("../static/q.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+      }
+      .ace{
+         font-size: 15px;
+         color:#778899;
+      }
+    </style>
+  </head>
+
+  <body>
+  <!-- seating the navbar by bootstrap
+       the navbar is at the top of the
+                webpage-->
+    <nav class="navbar navbar-inner">
+        <div class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <a class="navbar-brand"><font color="#B40404" size="6px" face="fantasy">EA</font></a>
+        </div>
+            {% if current_user.is_authenticated %}
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a> </li>
+                <li><a href="/forum">Forum</a></li>
+                <li><a href="{{ url_for('user', name=current_user.name) }}">Profile</a></li>
+                <li><a href="/explore">Explore</a></li>
+            </ul>
+            {% else %}
+             <ul class="nav navbar-nav">
+                <li><a href="/">Home</a> </li>
+                 <li><a href="/forum">Forum</a></li>
+
+             </ul>
+            {% endif %}
+
+            <ul class="nav navbar-nav navbar-right">
+                {% if current_user.is_authenticated %}
+                <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+                {% else %}
+                <li><a href="{{ url_for('login') }}">Log In</a></li>
+                {% endif %}
+            </ul>
+    </nav>
+    <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+
+            {% for message in messages %}
+            <div class="alert alert-warning">
+                <a href="/" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                  <strong></strong> {{ message }}
+            </div>
+            {% endfor %}
+
+          {% endif %}
+        {% endwith %}
+        {% block content %}{% endblock %}
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+  </div>
+  </body>
+</html>

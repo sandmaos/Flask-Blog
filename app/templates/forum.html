@@ -1,0 +1,102 @@
+ {% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+    {% if current_user.is_authenticated %}
+      <form action="" method="post" name="create">
+      {{ form.hidden_tag() }}
+      <p>
+          <font color="#778899" size="4px" > What's on your mind?:</font><br>
+          {{ form.body(cols='80',class_='form-control') }}<br>
+          <font color="#778899" size="4px" > How you feel:</font><br>
+          {{ form.author(cols='80',class_='form-control') }}<br>
+      </p>
+      <p><input type="submit" class="btn btn-primary" value="Submit"></p>
+  </form>
+    {% endif %}
+
+
+<style>
+    .post-body{
+        word-wrap: break-word;
+        font-size: 15px;
+        font-family: Arial;}
+.p41{
+   text-align: left;
+
+   font-variant: small-caps;
+   font-family: Arial;
+   font-stretch: semi-condensed;
+   font-size: 18px;
+ }
+
+.p4{
+    color: #0d2991;
+    font-weight: bolder;
+   text-align: left;
+   font-size: 16px;
+ }
+    .button {
+  display: inline-block;
+  padding: 3px 10px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #5e79d7;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px #999;
+}
+
+.button:hover {background-color: #3c59ba}
+
+.button:active {
+  background-color: #3c59ba;
+  box-shadow: 0 3px #666;
+  transform: translateY(2px);
+}
+</style>
+
+    <div style="background-color: #fcf8e3c9">
+    <br><ul class="posts">
+
+
+
+    {% for post in posts %}
+    <li class="post">
+        {% for user in user %}
+            {% if user.name == post.author %}
+                    <img class="img-rounded profile-thumbnail" src="{{ user.gravatar(size=50) }}">&nbsp;&nbsp;
+                    <a href="/blog_user/{{ post.author }}"><button class="button">{{ post.author }}</button></a>
+            {% endif %}
+        {% endfor %}
+
+        <div class="post-date"> <font color="#5d6c7c" size="4px" >{{ post.timestamp.date()}}&nbsp; &nbsp;{{(post.timestamp.hour)}}h {{(post.timestamp.minute)}}min</font></div>
+
+        <p class="p41">{{ post.body }}</p>
+    {% if post.comment %}
+     <p class="p4">Comment: {{ post.comment }}</p>
+    {% endif %}
+<div class="page-header">
+    {% if post.author == current_user.name %}
+                 <a href="/edit_post/{{post.id}}"><button class="btn btn-primary btn-sm">Edit</button></a>
+        <button class="btn disabled btn-primary btn-sm">Comment</button>
+                <a href="/delete_post/{{post.id}}"><button type="button" class="btn btn-danger btn-sm">Delete</button></a>
+        {% elif current_user.is_authenticated%}
+            <button class="btn disabled btn-primary btn-sm">Edit</button>
+            <a href="/comment_post/{{post.id}}"><button type="button" class="btn btn-primary btn-sm">Comment</button></a>
+            <button class="btn disabled btn-danger btn-sm">Delete</button>
+        {% else %}
+            <button class="btn disabled btn-primary btn-sm">Edit</button>
+            <button type="button" class="btn disabled btn-primary btn-sm">Comment</button></a>
+            <button class="btn disabled btn-danger btn-sm">Delete</button>
+            {% endif %}
+</div>
+    </li><br>
+    {% endfor %}
+    </ul>
+    </div>
+{% endblock %}

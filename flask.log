@@ -1,0 +1,90 @@
+2019-12-19 11:42:18,483 - INFO - views.py - homepage - 12 - good job
+2019-12-19 11:42:54,711 - INFO - views.py - homepage - 12 - good job
+2019-12-19 11:51:18,874 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 11:51:21,286 - INFO - views.py - get_all - 143 - user list
+2019-12-19 11:51:21,808 - INFO - views.py - user - 61 - User
+2019-12-19 11:51:27,236 - INFO - views.py - blog_user - 176 - user
+2019-12-19 11:51:30,292 - INFO - views.py - blog_user - 176 - user
+2019-12-19 11:51:31,968 - INFO - views.py - blog_user - 176 - user
+2019-12-19 11:51:38,867 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 11:51:39,928 - INFO - views.py - user - 61 - User
+2019-12-19 11:51:40,416 - INFO - views.py - get_all - 143 - user list
+2019-12-19 11:51:40,975 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 11:51:42,360 - INFO - views.py - logout - 53 - logout
+2019-12-19 11:51:42,365 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 11:51:44,660 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 11:51:56,062 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 11:51:56,986 - INFO - views.py - login - 29 - Logged in
+2019-12-19 11:52:05,773 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 11:52:09,442 - INFO - views.py - get_all - 143 - user list
+2019-12-19 11:52:10,180 - INFO - views.py - user - 61 - User
+2019-12-19 11:52:14,910 - INFO - views.py - edit_password - 106 - password has been updated
+2019-12-19 11:52:14,918 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 11:52:16,982 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 11:52:17,878 - INFO - views.py - user - 61 - User
+2019-12-19 11:52:32,487 - INFO - views.py - edit_my - 76 - Edited name
+2019-12-19 11:52:32,491 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 11:52:33,873 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 11:52:35,001 - INFO - views.py - logout - 53 - logout
+2019-12-19 11:52:35,011 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 11:52:36,390 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 12:32:20,320 - INFO - views.py - login - 29 - Logged in
+2019-12-19 12:32:28,349 - INFO - views.py - login - 29 - Logged in
+2019-12-19 12:32:41,656 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 12:32:43,121 - INFO - views.py - user - 61 - User
+2019-12-19 12:32:45,954 - INFO - views.py - get_all - 143 - user list
+2019-12-19 12:32:47,901 - INFO - views.py - user - 61 - User
+2019-12-19 12:32:48,646 - INFO - views.py - user - 61 - User
+2019-12-19 12:32:49,560 - INFO - views.py - get_all - 143 - user list
+2019-12-19 16:01:11,561 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 16:01:20,034 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 16:01:22,003 - INFO - views.py - login - 29 - Logged in
+2019-12-19 16:01:30,034 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 16:01:38,185 - INFO - views.py - user - 61 - User
+2019-12-19 16:05:11,245 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 16:05:13,931 - INFO - views.py - user - 61 - User
+2019-12-19 16:05:17,019 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 17:22:13,852 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 18:08:22,904 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 18:08:28,137 - INFO - views.py - user - 61 - User
+2019-12-19 18:08:29,736 - INFO - views.py - get_all - 143 - user list
+2019-12-19 18:08:32,943 - INFO - views.py - user - 61 - User
+2019-12-19 18:08:38,268 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 18:08:48,739 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 18:08:50,227 - INFO - views.py - user - 61 - User
+2019-12-19 19:04:35,268 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 19:04:42,077 - INFO - views.py - logout - 53 - logout
+2019-12-19 19:04:42,183 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 19:04:44,396 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 19:04:46,733 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 19:04:55,330 - INFO - views.py - blog_user - 176 - user
+2019-12-19 19:04:59,371 - INFO - views.py - blog_user - 176 - user
+2019-12-19 19:05:03,291 - INFO - views.py - blog_user - 176 - user
+2019-12-19 19:05:15,714 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 19:31:10,160 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 20:39:48,917 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 20:39:52,235 - INFO - views.py - login - 29 - Logged in
+2019-12-19 20:40:09,407 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 20:40:37,966 - INFO - views.py - blog_user - 176 - user
+2019-12-19 20:40:40,210 - INFO - views.py - blog_user - 176 - user
+2019-12-19 20:40:42,736 - INFO - views.py - blog_user - 176 - user
+2019-12-19 20:40:47,054 - INFO - views.py - blog_user - 176 - user
+2019-12-19 21:38:33,110 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 21:38:37,307 - INFO - views.py - user - 61 - User
+2019-12-19 21:38:38,672 - INFO - views.py - user - 61 - User
+2019-12-19 21:38:39,089 - INFO - views.py - get_all - 143 - user list
+2019-12-19 21:38:39,569 - INFO - views.py - user - 61 - User
+2019-12-19 21:38:40,176 - INFO - views.py - get_all - 143 - user list
+2019-12-19 21:38:48,341 - INFO - views.py - user - 61 - User
+2019-12-19 21:38:48,968 - INFO - views.py - get_all - 143 - user list
+2019-12-19 21:38:49,642 - INFO - views.py - user - 61 - User
+2019-12-19 21:39:19,715 - INFO - views.py - get_all - 143 - user list
+2019-12-19 21:39:25,196 - INFO - views.py - get_detail - 152 - user homepage
+2019-12-19 21:39:27,720 - INFO - views.py - get_all - 143 - user list
+2019-12-19 21:39:29,118 - INFO - views.py - get_detail - 152 - user homepage
+2019-12-19 21:39:32,320 - INFO - views.py - get_detail - 152 - user homepage
+2019-12-19 21:39:36,076 - INFO - views.py - get_all - 143 - user list
+2019-12-19 21:39:37,506 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 21:39:38,804 - INFO - views.py - logout - 53 - logout
+2019-12-19 21:39:38,812 - INFO - views.py - homepage - 12 - Welcome
+2019-12-19 21:39:40,343 - INFO - views.py - homepage - 12 - Welcome
